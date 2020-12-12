@@ -1,9 +1,9 @@
 #! /bin/bash
 
-sudo docker login --username=ybingc --password=Shandong01
+docker login --username=ybingc --password=Shandong01
 
-sudo docker images
-sudo docker push ybingc/ubuntu-helloworld
-sudo docker rmi -f  ybingc/ubuntu-helloworld:firsttry
-sudo docker pull ybingc/ubuntu-helloworld:firsttry
-sudo docker images
+docker images
+docker push ybingc/ubuntu-helloworld
+docker rmi -f  ybingc/ubuntu-helloworld:firsttry
+docker pull ybingc/ubuntu-helloworld:firsttry
+docker images
