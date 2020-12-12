@@ -1,0 +1,29 @@
+version: '2'
+
+
+
+services:
+
+
+
+  compose-test:
+
+    image: Ubuntu
+
+    links:
+
+      - compose-db
+
+    command: /usr/bin/curl compose-db:6379
+
+
+
+  compose-db:
+
+    image: redis
+
+    expose:
+
+      - "6379"
+
+
